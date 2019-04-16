@@ -1,0 +1,90 @@
+---
+"Items":
+  # Raw Materials
+  "Aluminum":         null
+  "Copper":           null
+  "Gold":             null
+  "Iron":             null
+
+  "Gold Gear":        null
+  "Iron Gear":        null
+
+  "Liquid Aluminum":  null
+
+  "Aluminum Plate":   null
+  "Copper Plate":     null
+  "Gold Plate":       null
+  
+  "Copper Wire":      null
+  "Iron Wire":        null
+
+  "Circuit":
+    "Copper Wire": 2
+    "Gold": 1
+
+  "Engine":
+    "Iron Gear": 2
+    "Gold Gear": 1
+
+  "Battery":
+    "Circuit": 1
+    "Aluminum": 1
+    "Liquid Aluminum": 1
+
+  "Processor":
+    "Circuit": 2
+    "Aluminum": 2
+
+  "Power Supply":
+    "Circuit": 1
+    "Copper Wire": 3
+    "Iron Wire": 3
+
+  "Generator":
+    "Engine": 4
+    "Gold Plate": 5
+    "Copper Plate": 5
+
+  "Computer":
+    "Processor": 1
+    "Aluminum": 6
+    "Power Supply": 1
+
+  "Server":
+    "Aluminum Plate": 20
+    "Aluminum": 10
+
+  "Advanced Engine":
+    "Engine": 50
+    "Circuit": 50
+
+  "Super Computer":
+    "Computer": 30
+    "Server": 10
+
+  "Electric Generator":
+    "Generator": 15
+    "Circuit": 50
+    "Battery": 40
+
+  "Electric Engine":
+    "Advanced Engine": 10
+    "Battery": 40
+
+  "AI Processor":
+    "Super Computer": 4
+    "Circuit": 40
+
+  "Robot Body":
+    "Electric Engine": 1
+    "Electric Generator": 1
+    "Aluminum": 400
+
+  "Robot Head":
+    "Ai Processor": 1
+    "Aluminum": 200
+
+  "AI Robot":
+    "Robot Head": 1
+    "Robot Body": 1
+...
