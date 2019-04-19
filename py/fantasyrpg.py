@@ -129,49 +129,49 @@ class Player(object):
         self.update()
 
     def pnt(self):
-        BaseStats = ["%-15s %s" % ("name:", str(self.name)),
-            "%-15s %s" % ("strength:", str(self.strength)),
-            "%-15s %s" % ("dexterity:", str(self.dexterity)),
-            "%-15s %s" % ("vitality:", str(self.vitality)),
-            "%-15s %s" % ("endurance:", str(self.endurance)),
-            "%-15s %s" % ("resistance:", str(self.resistance)),
-            "%-15s %s" % ("wisdom:", str(self.wisdom)),
-            "%-15s %s" % ("charisma:", str(self.charisma)),
-            "%-15s %s" % ("intimidation:", str(self.intimidation)),
-            "%-15s %s" % ("knowledge:", str(self.knowledge)),
-            "%-15s %s" % ("faith:", str(self.faith)),
-            "%-15s %s" % ("attractiveness:", str(self.attractiveness)),
-            "%-15s %s" % ("willpower:", str(self.willpower)),
-            "%-15s %s" % ("curiosity:", str(self.curiosity)),
-            "%-15s %s" % ("instinct:", str(self.instinct)),
-            "%-15s %s" % ("friendliness:", str(self.friendliness)),
-            "%-15s %s" % ("destiny:", str(self.destiny))]
+        BaseStats = ["{:15} {}".format("name:", self.name),
+            "{:15} {}".format("strength:", self.strength),
+            "{:15} {}".format("dexterity:", self.dexterity),
+            "{:15} {}".format("vitality:", self.vitality),
+            "{:15} {}".format("endurance:", self.endurance),
+            "{:15} {}".format("resistance:", self.resistance),
+            "{:15} {}".format("wisdom:", self.wisdom),
+            "{:15} {}".format("charisma:", self.charisma),
+            "{:15} {}".format("intimidation:", self.intimidation),
+            "{:15} {}".format("knowledge:", self.knowledge),
+            "{:15} {}".format("faith:", self.faith),
+            "{:15} {}".format("attractiveness:", self.attractiveness),
+            "{:15} {}".format("willpower:", self.willpower),
+            "{:15} {}".format("curiosity:", self.curiosity),
+            "{:15} {}".format("instinct:", self.instinct),
+            "{:15} {}".format("friendliness:", self.friendliness),
+            "{:15} {}".format("destiny:", self.destiny)]
 
-        CombStats = ["%-15s %s" % ("awareness:", str(int( self.awareness ))),
-            "%-15s %s" % ("reflexes:", str(int( self.reflexes ))),
-            "%-15s %s" % ("deceit:", str(int( self.deceit ))),
-            "%-15s %s" % ("focus:", str(int( self.focus ))),
-            "%-15s %s" % ("defense:", str(int( self.defense ))),
-            "%-15s %s" % ("intelligence:", str(int( self.intelligence ))),
-            "%-15s %s" % ("stamina:", str(int( self.stamina ))),
-            "%-15s %s" % ("evasion:", str(int( self.evasion ))),
-            "%-15s %s" % ("speed:", str(int( self.speed ))),
-            "%-15s %s" % ("form:", str(int( self.form ))),
-            "%-15s %s" % ("lift:", str(int( self.lift ))),
-            "%-15s %s" % ("latentMagic:", str(int( self.latentMagic ))),
-            "%-15s %s" % ("practicedMagic:", str(int( self.practicedMagic ))),
-            "%-15s %s" % ("divineMagic:", str(int( self.divineMagic ))),
-            "%-15s %s" % ("performMagic:", str(int( self.performanceMagic ))),
-            "%-15s %s" % ("strike:", str(int( self.strike ))),
-            "%-15s %s" % ("thrust:", str(int( self.thrust ))),
-            "%-15s %s" % ("poise:", str(int( self.poise ))),
-            "%-15s %s" % ("diplomacy:", str(int( self.diplomacy )))]
+        CombStats = ["{:15} {}".format("awareness:", int( self.awareness )),
+            "{:15} {}".format("reflexes:", int( self.reflexes )),
+            "{:15} {}".format("deceit:", int( self.deceit )),
+            "{:15} {}".format("focus:", int( self.focus )),
+            "{:15} {}".format("defense:", int( self.defense )),
+            "{:15} {}".format("intelligence:", int( self.intelligence )),
+            "{:15} {}".format("stamina:", int( self.stamina )),
+            "{:15} {}".format("evasion:", int( self.evasion )),
+            "{:15} {}".format("speed:", int( self.speed )),
+            "{:15} {}".format("form:", int( self.form )),
+            "{:15} {}".format("lift:", int( self.lift )),
+            "{:15} {}".format("latentMagic:", int( self.latentMagic )),
+            "{:15} {}".format("practicedMagic:", int( self.practicedMagic )),
+            "{:15} {}".format("divineMagic:", int( self.divineMagic )),
+            "{:15} {}".format("performMagic:", int( self.performanceMagic )),
+            "{:15} {}".format("strike:", int( self.strike )),
+            "{:15} {}".format("thrust:", int( self.thrust )),
+            "{:15} {}".format("poise:", int( self.poise )),
+            "{:15} {}".format("diplomacy:", int( self.diplomacy ))]
 
         while len(BaseStats) < len(CombStats): BaseStats.append("")
         while len(BaseStats) < len(CombStats): CombStats.append("")
 
         for BS, CS in zip(BaseStats, CombStats):
-            print "%-25s %s" % (BS, CS)
+            print("{:25} {}".format(BS, CS))
 
     def rank(self, stat, x=1):
         result = {
